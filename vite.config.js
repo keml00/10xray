@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Makes all asset paths relative, perfect for GitHub Pages
+  base: '/10xray/', // Makes all asset paths relative, perfect for GitHub Pages
   build: {
     rollupOptions: {
       input: {

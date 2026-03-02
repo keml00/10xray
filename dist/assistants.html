@@ -7,8 +7,8 @@
     <title>ИИ-ассистенты и дашборды | AI System</title>
     <meta name="description"
         content="Детальное описание ролей ИИ-сотрудников: копирайтеры, SMM, аналитики, продажники." />
-  <script type="module" crossorigin src="./assets/style-CGcO6piV.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/style-CEFEJFFh.css">
+  <script type="module" crossorigin src="/10xray/assets/style-CVf8Qx8O.js"></script>
+  <link rel="stylesheet" crossorigin href="/10xray/assets/style-Drk4fdKL.css">
 </head>
 
 <body>
@@ -25,10 +25,22 @@
                 <a href="/services.html">Услуги</a>
                 <a href="/consultants.html">Партнерам</a>
             </div>
-            <a href="/#cta" class="btn btn-primary nav-cta">
-                Оставить заявку
-                <i data-lucide="arrow-right"></i>
-            </a>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div
+                    style="display: flex; gap: 0.5rem; color: var(--text-muted); font-size: 0.9rem; font-weight: 600; padding-right: 0.5rem; border-right: 1px solid var(--glass-border);">
+                    <span style="color: var(--text-main); cursor: pointer;">RU</span>
+                    <span style="opacity: 0.3; cursor: not-allowed;" title="В разработке">EN</span>
+                </div>
+                <button id="theme-toggle" class="btn btn-secondary" aria-label="Toggle Theme"
+                    style="padding: 0.5rem; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; min-width: 44px; border-color: var(--glass-border);">
+                    <i data-lucide="sun" id="theme-icon-sun" style="display: none; width: 20px; height: 20px;"></i>
+                    <i data-lucide="moon" id="theme-icon-moon" style="width: 20px; height: 20px;"></i>
+                </button>
+                <a href="/#cta" class="btn btn-primary nav-cta">
+                    Оставить заявку
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
             <button class="mobile-menu-btn" aria-label="Открыть меню">
                 <i data-lucide="menu"></i>
             </button>
@@ -166,6 +178,14 @@
             <p>&copy; 2026 AI System. Внедрение ИИ-сотрудников.</p>
         </div>
     </footer>
+
+    <!-- Floating AI Widget -->
+    <a href="https://t.me/keml00" target="_blank" class="ai-widget"
+        style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 30px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4); text-decoration: none; z-index: 1000; transition: transform 0.3s ease;">
+        <i data-lucide="bot" style="color: var(--bg-dark); width: 30px; height: 30px;"></i>
+        <span
+            style="position: absolute; top: 0; right: 0; width: 15px; height: 15px; background: #FF2D55; border-radius: 50%; border: 2px solid var(--bg-dark);"></span>
+    </a>
 
 </body>
 

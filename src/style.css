@@ -43,6 +43,23 @@
   --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+:root.light-mode {
+  --bg-dark: #F8FAFC;
+  --bg-dark-rgb: 248, 250, 252;
+  --bg-card: #FFFFFF;
+  --bg-card-rgb: 255, 255, 255;
+
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --text-white: #0F172A;
+
+  --gradient-text: linear-gradient(135deg, #0F172A, #334155);
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
 /* Reset and Base */
 *,
 *::before,
@@ -191,6 +208,12 @@ section {
   -webkit-backdrop-filter: var(--glass-blur);
   border-bottom: 1px solid var(--glass-border);
   transition: var(--transition-smooth);
+}
+
+.header.scrolled {
+  background: rgba(var(--bg-dark-rgb), 0.9);
+  box-shadow: var(--glass-shadow);
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .nav {
